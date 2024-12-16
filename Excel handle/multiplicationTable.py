@@ -7,7 +7,8 @@ if len(sys.argv) == 2:
         number = int(sys.argv[1])
         
     except Exception as e:
-        print(e)    
+        print(e)   
+         
     excelFile = openpyxl.Workbook()
     sheet = excelFile.active 
     
@@ -30,7 +31,7 @@ if len(sys.argv) == 2:
             if isHeader:
                 cell.font = Font(bold=True)
             cell.value = n
-    savedFile = str(Path("D:\Code\Husoub Academy\Python\PythonLearning\Excel handle") / 'multiplication_table_') + str(number) + '.xlsx'
+    savedFile = str(Path("D:\\Code\\Husoub Academy\\Python\\PythonLearning\\Excel handle") / 'multiplication_table_') + str(number) + '.xlsx'
     excelFile.save(savedFile)
     print('Saved as ' + savedFile)
 

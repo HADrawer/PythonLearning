@@ -21,3 +21,4 @@ for pageNum in range(len(pdfReader.pages)):
 pdf.write(file)
 
 file.close
+

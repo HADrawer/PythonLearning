@@ -2,7 +2,7 @@ import ezgmail
 
 # print(ezgmail.EMAIL_ADDRESS)
 
-# ezgmail.send('hashemalsaie0457@gmail.com', 'Test line', 'Test Body of the email')
+# ezgmail.send('example1@gmail.com', 'Test line', 'Test Body of the email')
 
 unreadmessages = ezgmail.unread()
 # print(ezgmail.summary(unreadmessages))
